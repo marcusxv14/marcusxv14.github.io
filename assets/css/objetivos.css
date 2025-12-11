@@ -1,0 +1,54 @@
+.objetivos {
+    padding: 5rem 8%;
+    background: var(--cor-branco);
+    text-align: center;
+}
+
+.objetivos h2 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--cor-verde-principal);
+}
+
+.objetivos .card {
+    background: var(--cor-branco);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    max-width: 330px;
+    margin: 0 auto; 
+}
+
+.objetivos .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+}
+
+.objetivos .card img {
+    width: 65px;
+    margin-bottom: 1rem;
+}
+
+.objetivos .card h3 {
+    font-size: 1.4rem;
+    color: var(--cor-azul-principal);
+    margin-bottom: 0.8rem;
+}
+
+.objetivos .card p {
+    font-size: 0.95rem;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.4rem;
+}
+
+.objetivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+}
+
+.objetivos > h2 {
+    grid-column: 1 / -1;
+}
